@@ -12,8 +12,8 @@ var instagram = require('instagram-node-lib');
 var moment = require('moment');
 var pinch = require('pinch');
 
-instagram.set('client_id', '5b9e690526c34c5eb0bf9df091cc8ac6');
-instagram.set('client_secret', '0341d70127b041428c25b3ca11eb8f4f');
+instagram.set('client_id', 'yourInstagramID');
+instagram.set('client_secret', 'yourInstagramSecret');
 
 
 // required to make an https/tls connection to pb
@@ -22,8 +22,8 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 var port = (process.env.VCAP_APP_PORT || 3000);
 var host = (process.env.VCAP_APP_HOST || 'localhost');
 //for running locally
-var appId = "da73276e-3f72-4a5d-a6a4-c7d32d07d72a";
-var appSecret = "nNC0Tm5t8WhH22TcCb9L";
+var appId = "yourPBAppID";
+var appSecret = "yourPBSecret";
 var url = "https://pitneybowes.pbondemand.com/location/address/geocode.json";
 
 // all environments
