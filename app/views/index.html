@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Picture Finder</title>
+  <link href="/stylesheets/bootstrap.css" rel="stylesheet">
+  <style>
+    .hero-unit {
+      margin-top: 60px;
+    }
+  </style>
+  <script src="/javascripts/bootstrap.min.js"></script>
+
+</head>
+<meta charset="utf-8">
+<body>
+  <div class="container">
+    <div class="hero-unit">
+      <div class="pull-right">    
+      </div>
+      <div class="text-center">
+        <h1><a href="/">Picture Finder</a></h1>
+		<br/>
+        <p>Find Instagram pictures near here:</p> 
+		<br/>
+          <form action="/location" method="POST" >
+	<b>Address:</b>
+		    <input type="text" name="address" value="{{address}}">
+	<b>City:</b>
+		    <input type="text" name="city" value="{{city}}">
+	<br/>
+	<b>State:</b>
+			<input type="text" name="state" value="{{state}}">
+			
+
+            <input type="submit" class="btn" value="Find">
+          </form>
+{{#msg}}<div class="alert alert-info">{{msg}}</div>{{/msg}}
+<div>
+	<ul>
+	{{#data}}
+		<li style="display: inline-block; padding: 25px"><a href="{{link}}"><img src="{{#images}}{{#thumbnail}} {{url}} {{/thumbnail}}{{/images}}"></a> <br/>
+			By: <em> {{#user}} {{username}} {{/user}}</em> <br/>
+   			{{created_time}} 
+			<br/>
+            {{#comments}} {{count}} {{/comments}} comment(s)  {{#likes}} {{count}} {{/likes}} likes. </li>	
+	{{/data}}
+	</ul>
+</div>
+    </div>
+    <div>
+      <table class="table">
+  
+      </table>
+    </div>
+  </div>
+</body>
+</html>
