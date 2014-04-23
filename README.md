@@ -30,7 +30,7 @@ In the terminal, go into the directory named **app**, and follow these steps.
 
 2. Go to the Bluemix UI and create an instance of the Pitney Bowes Geocoding service.  As part of the service creation you'll need to create a Pitney Bowes developer account and application.
 
-3. **From the directory that houses the _app.js_ file** (not from the root directory that contains this *README.md* file), push the app with the --no-start option so we can bind our required service before starting.  Pass the -c flag to specify the start command that should be used by CloudFoundry to run your app.  Be sure to give your app a unique app name to be used for its hostname; for instance the example below would result in http://picturefinder-<username>.ng.bluemix.net.
+3. **From the directory that houses the _app.js_ file** (not from the root directory that contains this *README.md* file), push the app with the --no-start option so we can bind our required service before starting.  Pass the -c flag to specify the start command that should be used by CloudFoundry to run your app.  Be sure to give your app a unique app name to be used for its hostname; for instance the example below would result in http://picturefinder-jayallenmn.ng.bluemix.net.
 
    | *usage:*   | `$ cf push APP [--no-manifest] [--no-start] [-c COMMAND]`                |
    |------------|--------------------------------------------------------------------------|
