@@ -7,4 +7,4 @@ applications: #Reference http://docs.cloudfoundry.com/docs/using/deploying-apps/
   path: . #Path to the application to be pushed
   command: node app.js #The command to use to start the application
 services: 
-- Geocoding-demo #the already created geocode service 
+- Geocoding-demo #the already created geocode service. Change.
