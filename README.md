@@ -10,7 +10,7 @@ Use the IBM Bluemix Location services and Instagram to find pictures near an add
 Multiple methods exist for interacting with the BlueMix platform. Outlined below are two of those methods:
 
 1. [Command-Line](#method-command-line) 
-2. [IBM JazzHub](#method-ibm-jazzhub)
+2. [ IBM DevOps Services](#method-ibm-jazzhub)
 
 ### Method: Command-Line ###
 #### Prerequisites ####
@@ -49,9 +49,9 @@ In the terminal, go into the directory named **app**, and follow these steps.
    | *example:* | `$ cf start picturefinder-<username>`                 |
    
 
-### Method: IBM JazzHub ###
-1. Browse to the JazzHub project repository located [here](https://hub.jazz.net/project/jstart/Picture%20Finder%20%28Node%29/overview).  Click on **Edit Code** for the project.
-2. Click on "Fork".  This will provide you with a personal copy of the code within your JazzHub project space.
+### Method:  IBM DevOps Services ###
+1. Browse to the  DevOps Services project repository located [here](https://hub.jazz.net/project/jstart/Picture%20Finder%20%28Node%29/overview).  Click on **Edit Code** for the project.
+2. Click on "Fork".  This will provide you with a personal copy of the code within your DevOps Services project space.
 
 
 3. Located in the **app** directory of the project, rename **manifest.yml.v5** to **manifest.yml**
@@ -60,7 +60,7 @@ In the terminal, go into the directory named **app**, and follow these steps.
 4. Next, click on "Deploy".  This will use information within the **manifest.yml** to deploy the sample application directly into the codename: BlueMix platform.
 
 
-  You may continue to deploy changes to your BlueMix application directly from JazzHub using the "Deploy" and "Deploy As" buttons.
+  You may continue to deploy changes to your BlueMix application directly from DevOps Services using the "Deploy" and "Deploy As" buttons.
 
 5. Next, click on the Root Project Name and scroll to the **Manual Deployment Information** section.
 
